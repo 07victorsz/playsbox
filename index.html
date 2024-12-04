@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagem no Canto Superior Esquerdo</title>
+    <title>PlaysBox</title>
     <style>
         /* Estilo básico para o corpo da página */
         body {
@@ -13,25 +13,67 @@
             background-color: #f0f0f0;
         }
 
-        /* Definindo o estilo para o container que contém a imagem */
-        .container {
+        /* Estilo do cabeçalho */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
+            background-color: #4CAF50; /* Cor do fundo do cabeçalho */
+            padding: 10px;
+            color: white;
         }
 
         /* Estilo para a imagem no canto superior esquerdo */
         .imagem-canto {
+            width: 50px; /* Ajuste o tamanho da imagem */
+            height: auto;
+            margin-right: 10px; /* Espaçamento entre a imagem e o nome */
+        }
+
+        /* Estilo para o nome ao lado da imagem */
+        .nome {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Estilo para os links no topo (Suporte, Sorteios, Comunidade) */
+        .nav-links {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%; /* Tamanho ajustável da imagem */
-            height: auto; /* Mantém a proporção da imagem */
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px; /* Espaçamento entre os itens */
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Substitua o caminho da imagem para o correto -->
-        <img src="logo.png" class="imagem-canto">
-    </div>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <img src="sua-imagem.jpg" alt="Imagem no Canto Superior Esquerdo" class="imagem-canto">
+        <div class="nome">PlaysBox</div>
+
+        <!-- Links de navegação no topo -->
+        <div class="nav-links">
+            <a href="#">Suporte</a>
+            <a href="#">Sorteios</a>
+            <a href="#">Comunidade</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo adicional da página pode ser adicionado aqui -->
+
 </body>
 </html>
