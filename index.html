@@ -7,14 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Playsbox</h3>
-    <h3>Suporte</h3>
-    <h3>Sorteios</h3>
-    <h3>Comunidade</h3>
-    <button >Cadastrar</button>
-    <button >Logar</button>
-    <img src="" alt="">
-    <img src="" alt="">
+ 
+    
+    <div id="container">
+
+        <div>
+   <h3>Playsbox</h3>
+    <label>Suporte</label>
+    <label>Sorteios</label>
+    <label>Comunidade</label> 
+    <label>Pesquisar</label>
+        </div>
+        <div id="nav-bar">
+
+            <button  onclick="cadastro()">Cadastro</button>
+            <button  onclick="cadastro()">logar</button>
+            <button  onclick="bola()" id="bola"></button>
+        </div>
+
+        <div id="cadastro">
+            <p>Aqui vai ta uma breve descrição do site</p>
+            <label class="ca">Email</label>
+            <input class="ca" type="text">
+            <label class="ca" id="ca">Senha</label>
+            <input class="ca" type="password">
+
+        </div>
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
