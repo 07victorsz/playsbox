@@ -24,14 +24,22 @@
             color: white;
         }
 
-        /* Estilo para a imagem no canto superior esquerdo */
+        /* Estilo para a imagem e nome no canto superior esquerdo */
+        .header-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
         .imagem-canto {
             width: 50px; /* Ajuste o tamanho da imagem */
             height: auto;
             margin-right: 10px; /* Espaçamento entre a imagem e o nome */
         }
 
-        /* Estilo para o nome ao lado da imagem */
         .nome {
             font-size: 24px;
             font-weight: bold;
@@ -62,8 +70,11 @@
 
     <!-- Cabeçalho -->
     <header class="header">
-        <img src="logo.png"  class="imagem-canto">
-        <div class="nome">PlaysBox</div>
+        <!-- Imagem e Nome no canto superior esquerdo -->
+        <div class="header-left">
+            <img src="sua-imagem.jpg" alt="Imagem no Canto Superior Esquerdo" class="imagem-canto">
+            <div class="nome">PlaysBox</div>
+        </div>
 
         <!-- Links de navegação no topo -->
         <div class="nav-links">
