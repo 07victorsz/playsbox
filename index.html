@@ -76,6 +76,23 @@
             text-decoration: underline;
         }
 
+        /* Estilo para a aba de perfil (círculo) no canto superior direito */
+        .profile-circle {
+            position: absolute;
+            right: 20px; /* Coloca a aba de perfil a 20px da borda direita */
+            top: 25px; /* Alinha com a parte superior */
+            width: 40px; /* Tamanho do círculo */
+            height: 40px; /* Tamanho do círculo */
+            background-color: #333; /* Cor de fundo do círculo */
+            border-radius: 50%; /* Torna o elemento circular */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px; /* Tamanho do texto dentro do círculo */
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -91,6 +108,11 @@
         <!-- Caixa de Pesquisa no canto superior direito -->
         <div class="search-box">
             <input type="text" placeholder="Pesquisar...">
+        </div>
+
+        <!-- Aba de Perfil (círculo) no canto superior direito -->
+        <div class="profile-circle">
+            P
         </div>
 
         <!-- Links de navegação centralizados -->
