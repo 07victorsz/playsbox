@@ -27,11 +27,12 @@
         /* Estilo para a imagem e nome no canto superior esquerdo */
         .header-left {
             position: absolute; /* Posiciona no canto superior esquerdo */
-            top: 0;
+            top: 50%; /* Alinha verticalmente ao centro */
             left: 0;
             display: flex;
             align-items: center; /* Alinha a imagem e o texto verticalmente */
-            padding-left: 5px; /* Ajusta o espaço à esquerda, movendo a imagem mais para a esquerda */
+            padding-left: 5px; /* Ajusta o espaço à esquerda */
+            transform: translateY(-50%); /* Ajusta para o centro verticalmente */
         }
 
         .imagem-canto {
@@ -65,18 +66,13 @@
             text-decoration: underline;
         }
 
-        /* Ajusta a posição da palavra PlaysBox, movendo-a para a esquerda */
-        .nome-alinhado {
-            position: absolute;
-            left: calc(50% - 100px); /* Move a palavra para a esquerda, ajustando conforme necessário */
-        }
     </style>
 </head>
 <body>
 
     <!-- Cabeçalho -->
     <header class="header">
-        <!-- Imagem e Nome no canto superior esquerdo -->
+        <!-- Imagem e Nome no meio do canto superior esquerdo -->
         <div class="header-left">
             <img src="logo.png" class="imagem-canto">
             <div class="nome">PlaysBox</div>
