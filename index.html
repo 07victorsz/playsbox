@@ -16,44 +16,38 @@
         /* Estilo do cabeçalho */
         .header {
             display: flex;
-            align-items: center; /* Alinha os itens verticalmente no centro */
-            justify-content: center;
+            justify-content: center; /* Centraliza todo o conteúdo horizontalmente */
+            align-items: center;
+            background-color: #00ffff; /* Cor de fundo */
+            padding: 20px;
             position: relative;
-            background-color: #00ffff; /* Cor do fundo do cabeçalho */
-            padding: 3%;
-            color: white;
         }
 
-        /* Estilo para a imagem e nome no canto superior esquerdo */
+        /* Container para a imagem e nome no canto superior esquerdo */
         .header-left {
-            position: absolute; /* Posiciona no canto superior esquerdo */
-            top: 50%; /* Alinha verticalmente ao centro */
-            left: 0;
             display: flex;
-            align-items: center; /* Alinha a imagem e o texto verticalmente */
-            padding-left: 5px; /* Ajusta o espaço à esquerda */
-            transform: translateY(-50%); /* Ajusta para o centro verticalmente */
+            align-items: center; /* Alinha a imagem e o nome verticalmente */
+            position: absolute; /* Coloca a imagem no canto superior esquerdo */
+            left: 20px; /* Distância do lado esquerdo */
         }
 
         .imagem-canto {
-            height: 1em; /* A altura da imagem é igual ao tamanho da fonte do texto */
-            width: auto; /* A largura é ajustada proporcionalmente */
-            margin-right: 10px; /* Espaçamento entre a imagem e o nome */
+            height: 30px; /* Ajuste de tamanho da imagem */
+            width: auto;
+            margin-right: 10px; /* Espaço entre a imagem e o nome */
         }
 
         .nome {
-            font-size: 28px; /* Aumentei um pouco o tamanho da fonte */
+            font-size: 28px; /* Aumento do tamanho da fonte */
             font-weight: bold;
         }
 
-        /* Estilo para os links no topo (Suporte, Sorteios, Comunidade) */
+        /* Links de navegação centralizados */
         .nav-links {
-            position: absolute;
-            top: 10px; /* Distância do topo */
-            left: 50%; /* Posiciona no meio da tela */
-            transform: translateX(-50%); /* Ajusta a posição para centralizar */
             display: flex;
-            gap: 20px; /* Espaçamento entre os itens */
+            gap: 20px; /* Espaço entre os links */
+            justify-content: center; /* Centraliza os links */
+            flex-grow: 1; /* Faz os links ocuparem o espaço restante */
         }
 
         .nav-links a {
@@ -72,19 +66,18 @@
 
     <!-- Cabeçalho -->
     <header class="header">
-        <!-- Imagem e Nome no meio do canto superior esquerdo -->
+        <!-- Imagem e Nome no canto superior esquerdo -->
         <div class="header-left">
             <img src="logo.png" class="imagem-canto">
             <div class="nome">PlaysBox</div>
         </div>
 
-        <!-- Links de navegação centralizados no topo -->
+        <!-- Links de navegação centralizados -->
         <div class="nav-links">
             <a href="#">Suporte</a>
             <a href="#">Sorteios</a>
             <a href="#">Comunidade</a>
         </div>
-
     </header>
 
 </body>
