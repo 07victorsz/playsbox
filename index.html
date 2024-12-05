@@ -1,95 +1,34 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlaysBox</title>
-    <style>
-        /* Estilo básico para o corpo da página */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
+<style>
+    /* Estilo para a imagem e nome no canto superior esquerdo */
+    .header-left {
+        position: absolute; /* Posiciona no canto superior esquerdo */
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center; /* Alinha a imagem e o texto verticalmente */
+        padding-left: 5px; /* Ajusta o espaço à esquerda, movendo a imagem mais para a esquerda */
+    }
 
-        /* Estilo do cabeçalho */
-        .header {
-            display: flex;
-            align-items: center; /* Alinha os itens verticalmente no centro */
-            justify-content: center;
-            position: relative;
-            background-color: #00ffff; /* Cor do fundo do cabeçalho */
-            padding: 3%;
-            color: white;
-        }
+    .imagem-canto {
+        height: 1em; /* A altura da imagem é igual ao tamanho da fonte do texto */
+        width: auto; /* A largura é ajustada proporcionalmente */
+        margin-right: 10px; /* Espaçamento entre a imagem e o nome */
+    }
+</style>
+<style>
+    /* Estilo para a imagem e nome no canto superior esquerdo */
+    .header-left {
+        position: absolute; /* Posiciona no canto superior esquerdo */
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center; /* Alinha a imagem e o texto verticalmente */
+        padding-left: 5px; /* Ajusta o espaço à esquerda, movendo a imagem mais para a esquerda */
+    }
 
-        /* Estilo para a imagem e nome no canto superior esquerdo */
-        .header-left {
-            position: absolute; /* Posiciona no canto superior esquerdo */
-            top: 0;
-            left: 0;
-            display: flex;
-            align-items: center; /* Alinha a imagem e o texto verticalmente */
-            padding-left: 5px; /* Remove um pouco do espaço à esquerda */
-        }
-
-        .imagem-canto {
-            height: 1em; /* A altura da imagem é igual ao tamanho da fonte do texto */
-            width: auto; /* A largura é ajustada proporcionalmente */
-            margin-right: 10px; /* Espaçamento entre a imagem e o nome */
-        }
-
-        .nome {
-            font-size: 28px; /* Aumentei um pouco o tamanho da fonte */
-            font-weight: bold;
-        }
-
-        /* Estilo para os links no topo (Suporte, Sorteios, Comunidade) */
-        .nav-links {
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px; /* Espaçamento entre os itens */
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* Ajusta a posição da palavra PlaysBox */
-        .nome-alinhado {
-            position: absolute;
-            left: calc(50% - 100px); /* Move a palavra para a esquerda */
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Cabeçalho -->
-    <header class="header">
-        <!-- Imagem e Nome no canto superior esquerdo -->
-        <div class="header-left">
-            <img src="logo.png" class="imagem-canto">
-            <div class="nome">PlaysBox</div>
-        </div>
-
-        <!-- Links de navegação no topo -->
-        <div class="nav-links">
-            <a href="#">Suporte</a>
-            <a href="#">Sorteios</a>
-            <a href="#">Comunidade</a>
-        </div>
-
-    </header>
-
-</body>
-</html>
+    .imagem-canto {
+        height: 1em; /* A altura da imagem é igual ao tamanho da fonte do texto */
+        width: auto; /* A largura é ajustada proporcionalmente */
+        margin-right: 10px; /* Espaçamento entre a imagem e o nome */
+    }
+</style>
