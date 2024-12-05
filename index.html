@@ -31,24 +31,24 @@
             left: 0;
             display: flex;
             align-items: center; /* Alinha a imagem e o texto verticalmente */
-            padding: 10px;
+            padding-left: 5px; /* Remove um pouco do espaço à esquerda */
         }
 
         .imagem-canto {
-            height: 100px;
+            height: 1em; /* A altura da imagem é igual ao tamanho da fonte do texto */
             width: auto; /* A largura é ajustada proporcionalmente */
-            margin-right: 20px; /* Espaçamento entre a imagem e o nome */
+            margin-right: 10px; /* Espaçamento entre a imagem e o nome */
         }
 
         .nome {
-            font-size: 30px; /* Aumentei um pouco o tamanho da fonte */
+            font-size: 28px; /* Aumentei um pouco o tamanho da fonte */
             font-weight: bold;
         }
 
         /* Estilo para os links no topo (Suporte, Sorteios, Comunidade) */
         .nav-links {
             position: absolute;
-            top: 20px;
+            top: 10px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
@@ -58,7 +58,7 @@
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .nav-links a:hover {
@@ -68,7 +68,7 @@
         /* Ajusta a posição da palavra PlaysBox */
         .nome-alinhado {
             position: absolute;
-            
+            left: calc(50% - 100px); /* Move a palavra para a esquerda */
         }
     </style>
 </head>
