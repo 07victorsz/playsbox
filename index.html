@@ -7,32 +7,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-    
     <div id="container">
 
-        <div>
-   <h3>Playsbox</h3>
-    <label>Suporte</label>
-    <label>Sorteios</label>
-    <label>Comunidade</label> 
-    <label>Pesquisar</label>
-        </div>
-        <div id="nav-bar">
-
-            <button  onclick="cadastro()">Cadastro</button>
-            <button  onclick="cadastro()">logar</button>
-            <button  onclick="bola()" id="bola"></button>
-        </div>
-
+        <h3>Playsbox</h3>
+        <label>Suporte</label>
+        <label>Sorteios</label>
+        <label>Comunidade</label> 
+        <label>Pesquisar</label>
+        
+        
+        <button onclick="ircadastro()" id="cadastroir">Cadastro</button>
+        <button onclick="irlogin()" id="logarir">Logar</button>
+        <button onclick="ireditar()" id="editarir">Editar</button>
+        <button onclick="irdeletar()" id="deletarir">Deletar</button>
+        <button onclick="listar()" id="listarir">Mostrar usuarios cadastrados</button>
+    
+        
         <div id="cadastro">
-            <p>Aqui vai ta uma breve descrição do site</p>
-            <label class="ca">Email</label>
-            <input class="ca" type="text">
-            <label class="ca" id="ca">Senha</label>
-            <input class="ca" type="password">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <label for="password">Senha</label>
+            <input type="password" id="password">
+            <button onclick="cadastro()">Confimar</button>
+        </div>
+
+        <div id="login">
+
+            <label for="loginn">Email</label>
+            <input type="text" id="loginn">
+            <label for="senhaa">Senha</label>
+            <input type="password" id="senhaa">
+            <button  onclick="logar()">Confirmar</button>
 
         </div>
+
+        <div id="deletar">
+            <label for="loginn">Email</label>
+            <input type="text" id="deletarEmail">
+            <label for="senhaa">Senha</label>
+            <input type="password" id="deletarSenha">
+            <button  onclick="deletar()">Confirmar</button>
+        </div>
+
+        <div id="editar">
+            <label for="loginnn" id="EmailEditar">Email</label>
+            <input type="text" id="loginnn">
+            <label for="senhaaa" id="SenhaEditar">Senha</label>
+            <input type="password" id="senhaaa">
+            <button id="procurar" onclick="procurar()" >Procurar</button>
+            <button id="editar2" onclick="editar()" >Alterar email</button>
+            <button id="editar3" onclick="editar2()">Alterar senha</button>
+        </div>
+
 
     </div>
     <script src="script.js"></script>

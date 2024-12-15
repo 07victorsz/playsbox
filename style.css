@@ -1,45 +1,24 @@
-html{
-
-    height: 100%;
-
-}
-
 body{
-
-    height: 100%;
-    background-color: blueviolet;
-    margin: 0;
-
+    background-color: rgb(175, 123, 123);
 }
 
-#container{
 
-    height: 100%;
-    background-color: gold;
-
+#cadastro{
+    display: none;
+}
+#login{
+    display: none;
+}
+#deletar{
+    display: none;
+}
+#editar{
+    display: none;
 }
 
-#nav-bar{
-
-    height: 17%;
-    background-color: gray;
-
+#editar2{
+    display: none;
 }
-
-#cadastro
-{
-    height: 75%;
-    background-color: rebeccapurple;
-    display: block;
-
-}
-
-#bola{
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-}
-
-.ca{
-    justify-content: end ;
+#editar3{
+    display: none;
 }
