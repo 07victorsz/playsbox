@@ -1,0 +1,214 @@
+html {
+    height: 100vh; /* O elemento html ocupa 100% da altura da janela */
+}
+
+body {
+    height: 100vh; /* O corpo da página ocupa 100% da altura da janela */
+    background: linear-gradient(to right, #49ec64, #4D79FF);
+    margin: 0; /* Remove as margens padrão aplicadas pelos navegadores */
+}
+
+#container {
+    display: flex; /* Ativa o layout flexbox */
+    flex-direction: column; /* Organiza os itens dentro do container em uma coluna */
+    height: 100vh; /* O container ocupa 100% da altura da janela */
+    background: linear-gradient(to right, #49ec64, #4D79FF);
+}
+
+#topo {
+    height: 20%; /* A seção topo ocupa 10% da altura da tela */
+    width: 100%; /* A largura da seção topo ocupa 100% da tela */
+    display: flex; /* Ativa o layout flexbox dentro da seção topo */
+    background-color: white; /* Cor de fundo da seção topo: branco */
+}
+
+#topo-esquerda, #topo-direita {
+    height: 100%; /* As seções à esquerda e direita ocupam 100% da altura do topo */
+    width: 33%; /* Cada seção ocupa um terço da largura do topo */
+    display: flex; /* Ativa o layout flexbox dentro dessas seções */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+}
+
+#topo-esquerda {
+    background: linear-gradient(to right, #49ec64, #49ec64);
+}
+
+#topo-central {
+    height: 100%; /* A seção central ocupa 100% da altura do topo */
+    width: 34%; /* A seção central ocupa um terço da largura do topo */
+    display: flex; /* Ativa o layout flexbox dentro da seção central */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    background: linear-gradient(to right, #49ec64, #4D79FF);
+}
+
+#topo-direita {
+    background: linear-gradient(to right, #4D79FF, #4D79FF);
+}
+
+#logo-left, #logo-right {
+    height: 60%; /* A altura do logo à esquerda e à direita será % */
+    width: auto; /* A largura será ajustada automaticamente para manter a proporção */
+}
+
+#logo {
+    height: 80%; /* A altura do logo será % */
+    width: auto; /* A largura será ajustada automaticamente para manter a proporção */
+    margin-top: 10px;
+    
+}
+
+#nome {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto e a imagem */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    font-size: 50px; /* O tamanho da fonte será px */
+    font-weight: bold; /* O texto será em negrito */
+    color: black; /* A cor do texto será preta */
+    white-space: nowrap; /* O texto não quebrará em várias linhas */
+}
+
+
+.plays {
+    color: #003D8C; /* Cor do texto da classe plays será azul PlayStation */
+   
+}
+
+.box {
+    color: #107C10; /* Cor do texto da classe box será verde Xbox */
+    
+}
+
+#meio {
+    height: 80%; /* A seção do meio ocupa 80% da altura da tela */
+    width: 100%; /* A largura da seção do meio ocupa 100% da tela */
+    display: flex; /* Ativa o layout flexbox dentro da seção do meio */
+}
+
+#meio-esquerda, #meio-direita {
+    height: 100%; /* Cada uma das seções no meio ocupa 100% da altura */
+    width: 33%; /* Cada uma das seções no meio ocupa um terço da largura */
+    display: flex; /* Ativa o layout flexbox dentro das seções do meio */
+    justify-content: center; /* Alinha os itens verticalmente ao centro */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+    color: #000000; /* A cor do texto será verde Xbox */
+    text-align: center; /* O texto será centralizado horizontalmente */
+    flex-direction: column; /* Organiza os itens dentro das seções do meio em uma coluna */
+    font-size: 18px; /* O tamanho da fonte será 18px */
+    font-weight: bold; /* O texto será em negrito */
+}
+
+#meio-esquerda {
+    background: linear-gradient(to right, #49ec64, #49ec64);
+}
+
+#meio-centro {
+    flex-direction: column; /* Organiza os itens dentro da seção central em uma coluna */
+    background: linear-gradient(to right, #49ec64, #4D79FF);
+    width: 34%;
+}
+
+#meio-direita {
+    flex-direction: column; /* Organiza os itens dentro da seção direita em uma coluna */
+    background: linear-gradient(to right, #4D79FF, #4D79FF);
+}
+
+#meio-centro img {
+    width: 70%;
+    height: auto;
+    margin-top: 20vh;
+    margin-left: 65px;
+}
+
+.botao {
+    background-color: #107C10; /* Cor de fundo do botão: verde Xbox */
+    border: none; /* Remove a borda padrão do botão */
+    color: white; /* A cor do texto do botão será branca */
+    padding: 12px 24px; /* Adiciona preenchimento de 12px na vertical e 24px na horizontal */
+    text-align: center; /* O texto dentro do botão será centralizado */
+    text-decoration: none; /* Remove qualquer decoração do texto (como sublinhado) */
+    display: inline-block; /* Exibe o botão como um bloco de linha */
+    font-size: 16px; /* O tamanho da fonte será 16px */
+    margin: 10px 0; /* Adiciona uma margem de 10px na parte superior e inferior */
+    cursor: pointer; /* Altera o cursor para pointer quando passar o mouse sobre o botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas de 5px ao botão */
+    width: 100%; /* O botão ocupará toda a largura disponível de seu contêiner */
+    margin-left: -20px;
+}
+
+.botao:hover {
+    background-color: #0a5c0a; /* Muda a cor de fundo para um verde mais escuro quando o mouse passa sobre o botão */
+}
+
+@media (max-width: 768px) {
+    /* Define o layout para telas menores que 768px */
+    #topo {
+        flex-direction: column; /* Organiza as seções do topo em uma coluna em vez de linha */
+        height: auto; /* A altura do topo será ajustada automaticamente */
+    }
+
+    #topo-esquerda, #topo-central, #topo-direita {
+        width: 100%; /* Cada seção do topo ocupará 100% da largura */
+        height: auto; /* A altura será ajustada automaticamente */
+    }
+
+    #meio {
+        flex-direction: column; /* Organiza as seções do meio em uma coluna em vez de linha */
+        height: auto; /* A altura do meio será ajustada automaticamente */
+    }
+
+    #meio-esquerda, #meio-centro, #meio-direita {
+        width: 100%; /* Cada seção do meio ocupará 100% da largura */
+        height: auto; /* A altura será ajustada automaticamente */ 
+    }
+
+    .botao {
+        width: auto; /* O botão terá uma largura automática em telas menores */
+    }
+}
+
+#divLista {
+    color: black;
+    margin: 30px;
+}
+
+#cadastro {
+    display: none;
+}
+
+#login {
+    display: none;
+}
+
+#deletar {
+    display: none;
+}
+
+#editar {
+    display: none;
+}
+
+#editarNome {
+    display: none;
+}
+
+#editarSenha {
+    display: none;
+}
+
+#editarEmail {
+    display: none;
+}
+
+.inputs {
+    border-radius: 5px;
+}
+
+.confimars {
+    border-radius: 5px;
+    margin: 10px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}

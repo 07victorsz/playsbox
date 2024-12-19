@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página PlaysBox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="topo">
+            <div id="topo-esquerda">
+                <img id="logo-left" src="logoxbox-removebg-preview.png" alt="Imagem Canto Esquerdo">
+            </div>
+            <div id="topo-central">
+                <img id="logo" src="logo.png" alt="Logo">
+                <div id="nome">
+                    <span class="plays">Plays</span><span class="box">Box</span>
+                </div>
+            </div>
+            <div id="topo-direita">
+                <img id="logo-right" src="logops.png" alt="Imagem Canto Direito">
+            </div>
+        </div>
+
+        <div id="meio">
+            <!-- Seção principal que ocupa 80% da tela, dividida em três partes (esquerda, centro, direita) -->
+            <div id="meio-esquerda">
+                <!-- Seção à esquerda -->
+                <label id="texto-meio-esquerda">
+                    <!-- Parágrafo de texto, você pode adicionar qualquer conteúdo aqui -->
+                   PlaysBox é um site que ajuda as pessoas que nunca tiveram a oportunidade de jogar um jogo na infância, porque o mundo dos videogames é maravilhoso. Como nem todos têm essa oportunidade, nosso site está aqui para ajudá-los fazendo colaborações e arrecadando ajudas de pessoas para poder trazer alegria a essas pessoas com um console de jogos, permitindo maior colaboração e dando assim uma oportunidade de alegria com sorteios. É uma comunidade de gamers que permite ajudar nossos usuários a ter uma experiência mais alegre e menos desastrosa, sendo mais justos entre todos.
+                </label>
+            </div>
+        
+            <div id="meio-centro">
+                <!-- Seção central -->
+                <img src="xtation.png" alt="">
+                <!-- Imagem central, com o ID 'imagem-centro'. A imagem será carregada a partir do arquivo 'controle-removebg.png' -->
+            </div>
+        
+            <div id="meio-direita">
+                <!-- Seção à direita -->
+                <button onclick="ircadastro()" id="cadastroir" class="botao">Cadastrar</button>
+                <!-- Botão de Cadastrar -->
+                <button onclick="irlogin()" id="logarir" class="botao">Logar</button>
+                <!-- Botão de Logar -->
+                <button onclick="ireditar()" id="editarir" class="botao">Editar Usuário</button>
+                <!-- Botão para editar o usuário -->
+                <button onclick="irdeletar()" id="deletarir" class="botao">Deletar Usuário</button>
+                <!-- Botão para deletar usuário -->
+                <button onclick="listar()" id="listarir" class="botao">Listar Usuários</button>
+                <!-- Botão para listar usuários -->
+                
+                <div id="cadastro">
+                    <label for="nome">Username</label><br>
+                    <input class="inputs" type="text" id="Username"><br><br>
+                    <label for="password">Senha</label><br>
+                    <input class="inputs" type="password" id="password"><br><br>
+                    <label for="email">Email</label><br>
+                    <input class="inputs" type="text" id="email"><br>
+                    <button class="confimars" onclick="cadastro()">Confimar</button>
+                </div>
+        
+                <div id="login">
+                    <label for="loginn">Email</label><br>
+                    <input class="inputs" type="text" id="loginn"><br><br>
+                    <label for="senhaa">Senha</label><br>
+                    <input class="inputs" type="password" id="senhaa"><br>
+                    <button class="confimars"  onclick="logar()">Confirmar</button>
+                </div>
+        
+                <div id="deletar">
+                    <label for="nomeee">Username</label><br>
+                    <input class="inputs" type="text" id="Usernamedel"><br><br>
+                    <label for="senhaa">Senha</label><br>
+                    <input class="inputs" type="password" id="deletarSenha"><br><br>
+                    <label for="loginn">Email</label><br>
+                    <input class="inputs" type="text" id="deletarEmail"><br>
+                    <button class="confimars" onclick="deletar()">Confirmar</button>
+                </div>
+        
+                <div id="editar">
+                    <label for="nomeee">Username</label><br>
+                    <input class="inputs" type="text" id="Usernameedi"><br><br>
+                    <label for="senhaaa" id="SenhaEditar">Senha</label><br>
+                    <input class="inputs" type="password" id="senhaaa"><br><br>
+                    <label for="loginnn" id="EmailEditar">Email</label><br>
+                    <input class="inputs" type="text" id="loginnn"><br>
+                    <button class="confimars" id="procurar" onclick="procurar()" >Procurar</button>
+                    <button class="confimars" id="editarNome" onclick="editarNome()">Editar nome</button>
+                    <button class="confimars" id="editarSenha" onclick="editarSenha()">Editar senha</button>
+                    <button class="confimars" id="editarEmail" onclick="editarEmail()" >Editar email</button>
+                </div>
+                <div id="divLista"></div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>   
+</html>
